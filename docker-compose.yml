@@ -1,0 +1,12 @@
+services:
+  app-react:
+    build:
+      context: ./app-react
+    container_name: app-react
+    ports:
+      - 8000:8000
+    volumes:
+      - type: bind
+        source: ./app-react/src
+        target: /app/src
+    tty: true
