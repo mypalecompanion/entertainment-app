@@ -1,1 +1,66 @@
-.idea
+#--- Spring Boot App ---
+app-spring/HELP.md
+app-spring/.gradle
+app-spring/build/
+!app-spring/gradle/wrapper/gradle-wrapper.jar
+!app-spring/**/src/main/**/build/
+!app-spring/**/src/test/**/build/
+
+### STS ###
+app-spring/.apt_generated
+app-spring/.classpath
+app-spring/.factorypath
+app-spring/.project
+app-spring/.settings
+app-spring/.springBeans
+app-spring/.sts4-cache
+app-spring/bin/
+!app-spring/**/src/main/**/bin/
+!app-spring/**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+/.idea
+app-spring/.idea
+app-spring/*.iws
+app-spring/*.iml
+app-spring/*.ipr
+app-spring/out/
+app-spring/!**/src/main/**/out/
+app-spring/!**/src/test/**/out/
+
+### NetBeans ###
+app-spring/nbproject/private/
+app-spring/nbbuild/
+app-spring/dist/
+app-spring/nbdist/
+app-spring/.nb-gradle/
+
+### VS Code ###
+app-spring/.vscode/
+
+#--- React App ---
+
+# Logs
+app-react/logs
+app-react/*.log
+app-react/npm-debug.log*
+app-react/yarn-debug.log*
+app-react/yarn-error.log*
+app-react/pnpm-debug.log*
+app-react/lerna-debug.log*
+
+app-react/node_modules/*
+app-react/dist
+app-react/dist-ssr
+app-react/*.local
+
+# Editor directories and files
+app-react/.vscode/*
+!app-react/.vscode/extensions.json
+app-react/.idea
+app-react/.DS_Store
+app-react/*.suo
+app-react/*.ntvs*
+app-react/*.njsproj
+app-react/*.sln
+app-react/*.sw?
