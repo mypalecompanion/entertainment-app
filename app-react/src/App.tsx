@@ -1,13 +1,19 @@
 import { useState } from "react";
-import { Box, Button, Paper, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  ButtonGroup,
+  Grid,
+  Paper,
+  Typography,
+} from "@mui/material";
 import NavBar from "./components/NavBar";
+import ReactIcon from "./assets/react.svg";
 
 function App() {
   return (
     <>
       <NavBar />
-      {/* <h1>Hello World!</h1>
-      <Button variant="outlined">Testowy Button</Button> */}
       <Box
         display="flex"
         justifyContent="center"
@@ -17,12 +23,23 @@ function App() {
         <Paper
           sx={{
             p: 5,
-            minHeight: 300,
+            alignContent: "center",
+            margin: "auto",
+            textAlign: "center",
           }}
         >
-          <Typography variant="h4">Testujemy</Typography>
-          <Button variant="contained">Test</Button>
-          <Button variant="outlined">Drugi</Button>
+          <img src={ReactIcon} height={200} />
+          <Typography variant="h4" sx={{ mb: 2 }}>
+            Testujemy
+          </Typography>
+          <Grid container spacing={2} direction="column" alignItems="center">
+            <Grid item>
+              <Button variant="contained">Pierwszy</Button>
+            </Grid>
+            <Grid item>
+              <Button variant="outlined">Drugi</Button>
+            </Grid>
+          </Grid>
         </Paper>
       </Box>
     </>
