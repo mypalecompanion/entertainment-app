@@ -1,25 +1,12 @@
-import { useState } from "react";
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Grid,
-  Paper,
-  Typography,
-} from "@mui/material";
-import NavBar from "./components/NavBar";
+import { Box, Button, Grid, Paper, Typography } from "@mui/material";
 import ReactIcon from "./assets/react.svg";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <>
       <NavBar />
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        height="100vh"
-      >
+      <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
         <Paper
           sx={{
             p: 5,
