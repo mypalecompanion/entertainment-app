@@ -2,7 +2,7 @@ import { Box, Button, Grid, Paper, TextField, Typography } from "@mui/material";
 import { SubmitHandler, useForm } from "react-hook-form";
 import CrestIcon from "../assets/crest.svg";
 
-interface AuthorizationFormInput {
+export interface AuthorizationFormInput {
   email: string;
   password: string;
 }
@@ -10,14 +10,11 @@ interface AuthorizationFormInput {
 interface AuthorizationFormProps {
   title: string;
   onSubmit: SubmitHandler<AuthorizationFormInput>;
+  children?: React.ReactNode;
 }
 
-const AuthorizationForm = ({ title, onSubmit }: AuthorizationFormProps) => {
+const AuthorizationForm = ({ title, onSubmit, children }: AuthorizationFormProps) => {
   const { register, handleSubmit } = useForm<AuthorizationFormInput>({});
-
-  // const onSubmit: SubmitHandler<AuthorizationFormInput> = (data: AuthorizationFormInput) => {
-  //   console.log(data);
-  // };
 
   return (
     <Box display="flex" height="100vh">
@@ -45,6 +42,7 @@ const AuthorizationForm = ({ title, onSubmit }: AuthorizationFormProps) => {
                 Submit
               </Button>
             </Grid>
+            <Grid item>{children}</Grid>
           </Grid>
         </form>
       </Paper>
